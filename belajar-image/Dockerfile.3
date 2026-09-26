@@ -1,0 +1,10 @@
+FROM ubuntu:20.04
+
+LABEL maintainer="rofiqislamy88@gmail.com"
+
+RUN apt-get update
+WORKDIR /home/coba
+
+
+RUN  echo "hallo dari container 3" > coba.txt
+CMD ["echo", "hallo dari container 3"]
